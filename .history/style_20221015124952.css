@@ -1,0 +1,28 @@
+.exercise {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 1px solid red;
+}
+.exercise h1 {
+  color: green;
+  grid-column: 1/span 4;
+  justify-self: center;
+  text-decoration: underline blue 2px;
+}
+.exercise section {
+  grid-column: 1/5;
+  display: flex;
+  margin: 1rem;
+}
+.exercise article {
+  border: 1px solid green;
+  place-content: center;
+}
+.exercise article:nth-child(even) {
+  color: red;
+}
+.exercise article:nth-child(odd) {
+  color: blue;
+}
+
+/*# sourceMappingURL=style.css.map */

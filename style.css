@@ -1,0 +1,42 @@
+.exercise {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 1px solid red;
+}
+.exercise h1 {
+  color: green;
+  grid-column: 1/span 4;
+  justify-self: center;
+  text-decoration: underline blue 2px;
+}
+.exercise section {
+  grid-column: 1/5;
+  display: flex;
+  margin: 1rem;
+}
+
+section:nth-of-type(1) article:nth-of-type(odd) {
+  color: blue;
+  border: 1px solid;
+  border-color: green;
+  font-size: 1rem;
+}
+section:nth-of-type(1) article:nth-of-type(even) {
+  color: red;
+  border: 1px solid;
+  border-color: green;
+  font-size: 1rem;
+}
+
+section:nth-of-type(2) {
+  margin-top: 0px;
+  place-self: center;
+}
+section:nth-of-type(2) article {
+  color: green;
+  border: 1px solid;
+  border-color: blue;
+  font-size: 24px;
+}
+
+/*# sourceMappingURL=style.css.map */
